@@ -1,1 +1,863 @@
-Maintenance
+<!DOCTYPE html>
+<html lang="en-US">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="xmlrpc.php">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<title>Build ETH Staking Apps On The COO Infrastructure | Coo Network</title>
+	<meta name="description" content="Coo Leverage is designed for building high-performance, secure, and decentralized ETH staking applications." />
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="index.html" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://crypterio.stylemixthemes.com/white/#website","url":"https://crypterio.stylemixthemes.com/white/","name":"Crystal Clear ICO Landing Page Demo with White and Purple Colours","description":"Just another Blockchain Sites site","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://crypterio.stylemixthemes.com/white/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://crypterio.stylemixthemes.com/white/#primaryimage","inLanguage":"en-US","url":"","contentUrl":""},{"@type":"WebPage","@id":"https://crypterio.stylemixthemes.com/white/#webpage","url":"https://crypterio.stylemixthemes.com/white/","name":"ICO WordPress Theme in White and Purple Colours | Crypterio","isPartOf":{"@id":"https://crypterio.stylemixthemes.com/white/#website"},"datePublished":"2018-03-13T06:31:25+00:00","dateModified":"2022-09-12T06:24:16+00:00","description":"ICO WordPress Theme and Landing Page Template in Cryupterio - ICO and Cryptocurrency WordPress Theme. KYC/AML feature and Smart Contract Integration for easy ICO launching in Ethereum Cryptocurrency.","breadcrumb":{"@id":"https://crypterio.stylemixthemes.com/white/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://crypterio.stylemixthemes.com/white/"]}]},{"@type":"BreadcrumbList","@id":"https://crypterio.stylemixthemes.com/white/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+
+
+<link rel='dns-prefetch' href='http://cdnjs.cloudflare.com/' />
+<link rel='dns-prefetch' href='http://static.stylemixthemes.com/' />
+<link rel='dns-prefetch' href='http://maxcdn.bootstrapcdn.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Crystal Clear ICO Landing Page Demo with White and Purple Colours &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Crystal Clear ICO Landing Page Demo with White and Purple Colours &raquo; Comments Feed" href="comments/feed/index.html" />
+<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min9bd2.css?ver=5.9.4' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='stm-stmicons-css'  href='wp-content/uploads/sites/14/stm_fonts/stmicons/stmicons20b9.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='stm_megamenu-css'  href='wp-content/plugins/stm-configurations/megamenu/assets/css/megamenuad05.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min1849.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='vcw-style-css'  href='wp-content/plugins/virtual_coin_widgets/assets/css/vcw605a.css?ver=2.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css'  href='wp-content/themes/crypterio/style9bd2.css?ver=5.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='wp-content/themes/crypterio/assets/css/bootstrap.min62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='stm-font-awesome-css'  href='wp-content/themes/crypterio/assets/fonts/font-awesome/css/font-awesome.min62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='crypterio-style-css'  href='wp-content/themes/crypterio-child/style62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='crypterio-layout-css'  href='wp-content/themes/crypterio/assets/css/ico_white/main62ea.css?ver=1.2' type='text/css' media='all' />
+<style id='crypterio-layout-inline-css' type='text/css'>
+.page_title{ background-repeat: no-repeat !important; }body.site_creative_ico .vc_custom_heading.stripe_bottom:before, body.site_creative_ico .vc_custom_heading.stripe_top:before {
+			background: linear-gradient(to right, #28eedb, #34bbff);
+		}.mtc, .mtc_h:hover, .stm_news_list__more.loading:before, .site_crypto_blog ul.comment-list .comment .comment-author a, .site_crypto_blog ul.comment-list .comment .comment-meta a{
+					color: #475166!important
+				}.stc, .stc_h:hover, .stm_post_view__related .stm_news_widget .stm_news_grid__category a:hover, .stm_posts_carousel_single__category:hover a, .stm_single_ico__button.stm_single_ico__button_whitepaper i, .font-color_secondary{
+					color: #34bbff!important
+				}.ttc, .ttc_h:hover{
+					color: #28eedb!important
+				}.mbc, .mbc_h:hover{
+					background-color: #475166!important
+				}.sbc, .sbc_h:hover, .sbc_a:after, .stm_news_carousel .owl-controls .owl-nav>div:hover, .stm_single_ico__comments h4.comments-title:after, .secondary_bg_color{
+					background-color: #34bbff!important
+				}.tbc, .tbc_h:hover, .tbc_a_h:hover:after, .stm_single_ico__button, .stm_single_ico__button.stm_single_ico__button_whitepaper:hover{
+					background-color: #28eedb!important
+				}.mbdc, .mbdc_h:hover{
+					border-color: #475166!important
+				}.sbdc, .sbdc_h:hover, .stm_news_carousel .owl-controls .owl-nav>div:hover{
+					border-color: #34bbff!important
+				}.tbdc, .tbdc_h:hover, .stm_single_ico__button.stm_single_ico__button_whitepaper{
+					border-color: #28eedb!important
+				}#footer a, #footer span, #footer p, #footer div, #footer h4 { color: #222 !important; } #footer a:hover { color: #28eedb !important; } .stm_post_info .post_thumbnail img { max-width: 300px !important; } .has_envato_iframe .stm-header__row_color.pearl_is_sticky.pearl_going_sticky { top: 54px !important; }
+</style>
+<link rel='stylesheet' id='select2-css'  href='wp-content/themes/crypterio/assets/css/vendors/select2.min62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='crypterio-default-font-css'  href='https://fonts.googleapis.com/css?family=Karla%3A400%2C700%26subset%3Dlatin%2Cgreek%2Cgreek-ext%2Cvietnamese%2Ccyrillic-ext%2Clatin-ext%2Ccyrillic%7CRajdhani%3A400%2C500%2C600%2C700&amp;ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='crypterio-shared-css'  href='wp-content/themes/crypterio/assets/css/shared/main62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='wp-content/plugins/js_composer/assets/css/js_composer.min8e94.css?ver=6.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='stm_hb_main-css'  href='wp-content/plugins/pearl-header-builder/assets/frontend/assets/css/header/main5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='stm_hb_sticky-css'  href='wp-content/plugins/pearl-header-builder/assets/frontend/assets/vendor/sticky5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='wp-content/plugins/pearl-header-builder/assets/frontend/assets/css/font-awesome.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='stm-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Karla%3Aregular%2C700%2C300%2C500%2C600%7CRajdhani%3Aregular%2C700%2C300%2C500%2C600&amp;subset=devanagari%2Clatin%2Clatin-ext&amp;ver=1.2' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
+
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/12.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.9.4" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embedc771.json?url=https%3A%2F%2Fcrypterio.stylemixthemes.com%2Fwhite%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed1b8e?url=https%3A%2F%2Fcrypterio.stylemixthemes.com%2Fwhite%2F&amp;format=xml" />
+<script type="text/javascript">window.ccb_nonces = {"ccb_paypal":"9e2193a5e9","ccb_stripe":"559e2c70c0","ccb_contact_form":"41fd0e5e3b","ccb_woo_checkout":"e1b54fc285","ccb_add_order":"d1403e5255","ccb_orders":"9a54ab5847","ccb_update_order":"c973833941"};</script>        
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.5.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="wp-content/uploads/32x32.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/180x180.png" />
+<meta name="msapplication-TileImage" content="wp-content/uploads/270x270.png" />
+
+<style type="text/css" title="dynamic-css" class="options-output">#footer .widgets_row .footer_logo a img{height:50px;}body,
+					body .vc_general.vc_btn3 small,
+					.default_widgets .widget.widget_nav_menu ul li .children li,
+					.default_widgets .widget.widget_categories ul li .children li,
+					.default_widgets .widget.widget_product_categories ul li .children li,
+					.stm_sidebar .widget.widget_nav_menu ul li .children li,
+					.stm_sidebar .widget.widget_categories ul li .children li,
+					.stm_sidebar .widget.widget_product_categories ul li .children li,
+					.shop_widgets .widget.widget_nav_menu ul li .children li,
+					.shop_widgets .widget.widget_categories ul li .children li,
+					.shop_widgets .widget.widget_product_categories ul li .children li,
+					body.header_style_4 .header_top .icon_text .text strong,
+					.stm_ico_countdown__button,
+					.wpb_text_column ul li,
+					.button,
+					.woocommerce a.button,
+					.woocommerce button.button,
+					.woocommerce input.button,
+					.stm-header.stm-header__hb .stm-cart_style_1 .cart_rounded{font-family:Karla;}h1, .h1,
+					h2, .h2,
+					h3, .h3,
+					h4, .h4,
+					h5, .h5,
+					h6, .h6,
+					.top_nav .top_nav_wrapper > ul,
+					.top_nav .icon_text strong,
+					.stm_testimonials .item .testimonial-info .testimonial-text .name,
+					.stats_counter .counter_title,
+					.stm_contact .stm_contact_info .stm_contact_job,
+					.vacancy_table_wr .vacancy_table thead th,
+					.testimonials_carousel .testimonial .info .position,
+					.testimonials_carousel .testimonial .info .company,
+					.stm_gmap_wrapper .gmap_addresses .addresses .item .title,
+					.company_history > ul > li .year,
+					.stm_contacts_widget,
+					.stm_works_wr.grid .stm_works .item .item_wr .title,
+					.stm_works_wr.grid_with_filter .stm_works .item .info .title,
+					.consulting-rev-title,
+					.consulting-rev-title-2,
+					.consulting-rev-title-3,
+					.consulting-rev-text,
+					body .vc_tta-container .vc_tta.vc_general.vc_tta-tabs.theme_style .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab a,
+					strong, b,
+					.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+					.woocommerce input.button.alt,
+					.request_callback p,
+					ul.comment-list .comment .comment-author,
+					.page-numbers .page-numbers,
+					#footer .footer_widgets .widget.widget_recent_entries ul li a,
+					.default_widgets .widget.widget_nav_menu ul li,
+					.default_widgets .widget.widget_categories ul li,
+					.default_widgets .widget.widget_product_categories ul li,
+					.stm_sidebar .widget.widget_nav_menu ul li, .stm_sidebar .widget.widget_categories ul li,
+					.stm_sidebar .widget.widget_product_categories ul li,
+					.shop_widgets .widget.widget_nav_menu ul li,
+					.shop_widgets .widget.widget_categories ul li,
+					.shop_widgets .widget.widget_product_categories ul li,
+					.default_widgets .widget.widget_recent_entries ul li a,
+					.stm_sidebar .widget.widget_recent_entries ul li a,
+					.shop_widgets .widget.widget_recent_entries ul li a,
+					.woocommerce .widget_price_filter .price_slider_amount .button,
+					.woocommerce ul.product_list_widget li .product-title,
+					.woocommerce ul.products li.product .price,
+					.woocommerce a.added_to_cart,
+					.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+					.woocommerce div.product form.cart .variations label,
+					.woocommerce table.shop_table th,
+					.woocommerce-cart table.cart th.product-name a,
+					.woocommerce-cart table.cart td.product-name a,
+					.woocommerce-cart table.cart th .amount,
+					.woocommerce-cart table.cart td .amount,
+					.stm_services .item .item_wr .content .read_more,
+					.staff_list ul li .staff_info .staff_department,
+					.stm_partner.style_2 .stm_partner_content .position,
+					.comment-body .comment-text ul li,
+					body.header_style_4 .header_top .icon_text.big .text strong,
+					.info_box .read_more,
+					.stm_services_tabs .service_tab_item .service_name,
+					.stm_services_tabs .services_categories ul li a,
+					.stm_services_tabs .service_tab_item .service_cost,
+					.vc_custom_heading .subtitle,
+					.stm_gmap_wrapper .gmap_addresses .addresses .item .title,
+					.info_box h4,
+					.testimonials_carousel.style_2 .item .testimonial-info .testimonial-text .name,
+					.staff_carousel_item .staff_department,
+					body.header_style_5 .header_top .info-text strong,
+					.stm_works_wr.grid_2.style_1 .stm_works .item .item_wr .title,
+					.stm_works_wr.grid_2.style_2 .stm_works .item .item_wr .title,
+					.stm_works_wr.grid_with_filter.style_1 .stm_works .item .item_wr .title,
+					.stm_works_wr.grid_with_filter.style_2 .stm_works .item .item_wr .title,
+					body.header_style_7 .side_nav .main_menu_nav > li > a,
+					body.header_style_7 .side_nav .main_menu_nav > li ul li a,
+					body.header_style_5 .header_top .info-text b,
+					.pcw-box,
+					.pcw.pcw-table.pcw-basic table thead tr th,
+					.wpb_text_column .comment-text h6, .comment-body .comment-text h6,
+					.stm_timeline-wrap .timeline-item .timeline-date .timeline_year,
+					.stm_mailchimp_form .mailchimp_text .form_subtitle,
+					.stm_ico_countdown.style_3 .stm_countdown_wrap .stm_left_countdown .countdown-wrap.container .clock-item .inner .text .val,
+					.heading_font{font-family:Rajdhani;}</style>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1533534289279{background-image: url(wp-content/uploads/sites/14/2018/08/top-bg8749.jpg?id=4322) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1533528873642{background-image: url(https://crypterio.stylemixthemes.com/white/wp-content/uploads/sites/14/2018/07/left-grey-bg.jpg?id=4202) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1533119366698{background-color: #eef8ff !important;}.vc_custom_1533529000100{background-image: url(https://crypterio.stylemixthemes.com/white/wp-content/uploads/sites/14/2018/08/stmx_03.png?id=4244) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1533188651401{border-top-width: 1px !important;border-bottom-width: 1px !important;padding-top: 60px !important;padding-bottom: 60px !important;border-top-color: #e8e8e8 !important;border-top-style: solid !important;border-bottom-color: #e8e8e8 !important;border-bottom-style: solid !important;}.vc_custom_1612443637391{background-image: url(https://crypterio.stylemixthemes.com/white/wp-content/uploads/sites/14/2018/07/grey_bg_10.jpg?id=4192) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1533529240416{margin-bottom: 0px !important;}.vc_custom_1533288702926{padding-right: 90px !important;}.vc_custom_1533655448925{margin-right: 20px !important;}.vc_custom_1620101735080{background-image: url(https://crypterio.stylemixthemes.com/white/wp-content/uploads/sites/14/2018/08/video-bg_03.png?id=4250) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: contain !important;}.vc_custom_1533292575788{margin-bottom: 10px !important;}.vc_custom_1533292598508{margin-bottom: 10px !important;}.vc_custom_1533292613137{margin-bottom: 10px !important;}.vc_custom_1533118576058{margin-bottom: -80px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>		<!-- HEAD section Google Tag Manager -->
+	
+	<!-- End Google Tag Manager -->
+</head>
+<body 
+class="home page-template-default page page-id-12 site_ico_white  header_style_1 header_transparent wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>	<!-- after opening Body Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2HGV67"
+					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+<div id="wrapper">
+	<div id="fullpage" class="content_wrapper">
+
+		<header id="header">
+			<style type="text/css" id="styles-stm_hb_settings">@media (max-width:1023px) and (min-width:425px) {.stm-header__element.object246{order: -2100}}@media (max-width:425px) {.stm-header__element.object246{order: -2100}}.stm-header__element.object246{}@media (max-width:1023px) and (min-width:425px) {.stm-header__element.object1210{order: -2300}}@media (max-width:425px) {.stm-header__element.object1210{order: -2300}}.stm-header__element.object1210{}@media (max-width:1023px) and (min-width:425px) {.stm-header__element.object238{order: -1100}}@media (max-width:425px) {.stm-header__element.object238{order: -1100}}.stm-header__element.object238{}.stm-header{}.stm-header:before{}.stm-header__row_color_top{color:rgba(255, 255, 255, 0.6);} .stm-header__row_color_top .stm-icontext__text {color:rgba(255, 255, 255, 0.6);} .stm-header__row_color_top a {color:rgba(255, 255, 255, 0.6);} .stm-header__row_color_top .dropdown-toggle {color:rgba(255, 255, 255, 0.6)!important;} .stm-header__row_color_top a:hover, .stm-navigation__default > ul > li > a:hover {color:#fffefe!important;} .stm-header__row_color_top li:hover a {color:#fffefe;} .stm-header__row_color_top .stm-switcher__trigger_default:after {border-top-color:rgba(255, 255, 255, 0.6);} .stm-header__row_color_top .dropdown-toggle:after {border-top-color:rgba(255, 255, 255, 0.6)!important;}.stm-header__row_color_top:before{}.stm-header__row_color_center{padding-top:30px;padding-bottom:30px;color:#404040;} .stm-header__row_color_center .stm-icontext__text {color:#404040;} .stm-header__row_color_center a {color:#404040;} .stm-header__row_color_center .dropdown-toggle {color:#404040!important;} .stm-header__row_color_center li:hover > a {color:#34bbff!important;} .stm-header__row_color_center a:hover, .stm-navigation__default > ul > li > a:hover {color:#34bbff!important;} .stm-header__row_color_center a > .divider {color:#404040!important;} .stm-header__row_color_center a:hover > .divider {color:#404040!important;} .stm-header__row_color_center li:hover > a > .divider {color:#404040!important;} .stm-header__row_color_center .stm-switcher__trigger_default:after {border-top-color:#404040;} .stm-header__row_color_center .dropdown-toggle:after {border-top-color:#404040!important;}.stm-header__row_color_center:before{}.stm-header__row_color_bottom{} .stm-header__row_color_bottom .stm-icontext__text {color:;} .stm-header__row_color_bottom a {color:;} .stm-header__row_color_bottom .dropdown-toggle {color:!important;} .stm-header__row_color_bottom a:hover, .stm-navigation__default > ul > li > a:hover {color:!important;} .stm-header__row_color_bottom li:hover a {color:;} .stm-header__row_color_bottom .stm-switcher__trigger_default:after {border-top-color:;} .stm-header__row_color_bottom .dropdown-toggle:after {border-top-color:!important;}.stm-header__row_color_bottom:before{}                .stm_hb_mtc,.stm_hb_mtc_h:hover,.stm_hb_mtc_b:before,.stm_hb_mtc_b_h:hover:before,.stm_hb_mtc_a:after,.stm_hb_mtc_a_h:hover:after,.stm_hb_mtc_a_h.active,.mini-cart {color: #3db8f2 !important}
+                            .stm_hb_stc,.stm_hb_stc_h:hover,.stm_hb_stc_a:after,.stm_hb_stc_a_h:hover:after,.stm_hb_stc_b:before,.stm_hb_stc_b_h:hover:before {color: #222222 !important}
+                            .stm_hb_ttc,.stm_hb_ttc_h:hover,.stm_hb_ttc_a:after,.stm_hb_ttc_a_h:hover:after,.stm_hb_ttc_b:before,.stm_hb_ttc_b_h:hover:before {color: #297ee8 !important}
+                            .stm_hb_mbc,.stm_hb_mbc_h:hover,.stm_hb_mbc_b:before,.stm_hb_mbc_b_h:hover:before,.stm_hb_mbc_a:after,.stm_hb_mbc_a_h:hover:after,.stm_hb_mbc_h.active,.stm-search .stm_widget_search button[type=submit] {background-color: #3db8f2 !important}
+                            .stm_hb_sbc,.stm_hb_sbc_h:hover,.stm_hb_sbc_a:after,.stm_hb_sbc_a_h:hover:after,.stm_hb_sbc_b:before,.stm_hb_sbc_b_h:hover:before {background-color: #222222 !important}
+                            .stm_hb_tbc,.stm_hb_tbc_h:hover,.stm_hb_tbc_h.active,.stm_hb_tbc_a:after,.stm_hb_tbc_a_h:hover:after,.stm_hb_tbc_b:before,.stm_hb_tbc_b_h:hover:before {background-color: #297ee8 !important}
+                            .stm_hb_mbdc,.stm_hb_mbdc_h:hover,.stm_hb_mbdc_b:before,.stm_hb_mbdc_b_h:hover:before,.stm_hb_mbdc_a:after,.stm_hb_mbdc_a_h:hover:after,.stm-search .stm_widget_search .form-control:focus {border-color: #3db8f2 !important}
+                            .stm_hb_sbdc,.stm_hb_sbdc_h:hover,.stm_hb_sbdc_a:after,.stm_hb_sbdc_a_h:hover:after,.stm_hb_sbdc_b:before,.stm_hb_sbdc_b_h:hover:before {border-color: #222222 !important}
+                            .stm_hb_tbdc,.stm_hb_tbdc_h:hover,.stm_hb_tbdc_a:after,.stm_hb_tbdc_a_h:hover:after,.stm_hb_tbdc_b:before,.stm_hb_tbdc_b_h:hover:before {border-color: #297ee8 !important}
+            </style>
+
+
+<div class="stm-header stm-header__hb" id="stm_stm_hb_settings">
+					
+            <div class="stm-header__row_color stm-header__row_color_center elements_in_row_2">
+                <div class="container">
+                    <div class="stm-header__row stm-header__row_center">
+						                                <div class="stm-header__cell stm-header__cell_left">
+									                                            <div class="stm-header__element object246 stm-header__element_">
+												
+
+	<div class="stm-logo">
+		<a href="#" title="" data-wpel-link="internal">
+			<img alt="Logo" src="wp-content/uploads/coo.png" />		</a>
+	</div>
+
+                                            </div>
+										                                </div>
+							                                <div class="stm-header__cell stm-header__cell_right">
+									                                            <div class="stm-header__element object1210 stm-header__element_default">
+												
+
+        <style type="text/css">body .stm-header__hb .stm-header__element.object1210 .stm-navigation > ul > li:hover > a, body .stm-header__hb .stm-header__element.object1210 .stm-navigation > ul > li > a:hover { color: #34bbff !important; }</style>
+	
+    <div class="stm-navigation heading_font stm-navigation__default stm-navigation__default stm-navigation__none stm-navigation__ main_menu_nav" >
+		
+        <ul >
+			<li id="menu-item-4314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4314"><a href="#overview">Overview</a></li>
+<li id="menu-item-4065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4065"><a href="#about">About</a></li>
+<li id="menu-item-4066" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4066"><a href="#how_it_works">How it Works</a></li>
+<li id="menu-item-4070" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4070"><a href="#tokenomics">Tokenomics</a></li>
+<li id="menu-item-4068" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4068"><a href="#roadmap">Roadmap</a></li>
+<li id="menu-item-4067" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4067"><a href="https://register.cooleverage.tech" target="_blank">Register Testnet</a></li>
+        </ul>
+
+
+		
+    </div>
+
+                                            </div>
+										                                            <div class="stm-header__element object238 stm-header__element_">
+										
+                                            </div>
+										                                </div>
+							                    </div>
+                </div>
+            </div>
+				</div>
+
+
+
+<div class="stm-header__overlay"></div>
+
+<div class="stm_mobile__header">
+    <div class="container">
+        <div class="stm_flex stm_flex_center stm_flex_last stm_flex_nowrap">
+                            <div class="stm_mobile__logo">
+                    <a href="index.html" title="Home" data-wpel-link="internal">
+                        <img src="wp-content/uploads/coo.png"
+                             alt="Site Logo"/>
+                    </a>
+                </div>
+                        <div class="stm_mobile__switcher stm_flex_last js_trigger__click"
+                 data-element=".stm-header, .stm-header__overlay"
+                 data-toggle="false">
+                <span class="stm_hb_mbc"></span>
+                <span class="stm_hb_mbc"></span>
+                <span class="stm_hb_mbc"></span>
+            </div>
+        </div>
+    </div>
+</div>		</header>
+
+		<div id="main" 
+		>
+						<div class="container">
+
+	<div class="content-area">
+
+		<article id="post-12" class="post-12 page type-page status-publish hentry">
+
+	<div class="entry-content">
+					<section id="overview" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_section vc_custom_1533534289279 vc_section-has-fill" style="background-position: top center !important">
+    <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521230e7" style=" "></div>
+
+
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1533529240416"  style="animation-delay:.2s" >
+		<div class="wpb_wrapper">
+			<h1><span style="color: #34bbff; font-weight: 600;">Distributed Validator</span></h1>
+
+		</div>
+	</div>
+<div class="vc_custom_heading text_align_left wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp stripe_bottom"  style="animation-delay:.2s" ><h1 style="text-align: left" >Infrastructure for Developers</h1></div><div class="stm-spacing" id="stm-spacing-633d052123f64"></div>
+
+
+
+	<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1533288702926"  style="animation-delay:.4s" >
+		<div class="wpb_wrapper">
+			<p><span style="font-size: 18px;">Coo Leverage is designed for building high-performance, secure, and decentralized ETH staking applications.</span></p>
+
+		</div>
+	</div>
+<div class="stm-spacing" id="stm-spacing-633d05212415b"></div>
+
+
+    <style type="text/css">
+        .vc_btn3-633d052124956:hover {
+            background-color:  !important;
+        }
+    </style>
+<div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_btn3-inline vc_custom_1533655448925"  style="animation-delay:.6s" >
+	<a style="color:#ffffff;" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-custom vc_btn3-633d052124956 vc_btn3-icon-right" href="https://register.cooleverage.tech" title="" target="_blank" data-wpel-link="internal">Register Testnet <i style='color: #ffffff' class="vc_btn3-icon stm-stm-right-long-arrow"></i></a></div>
+    <style type="text/css">
+        .vc_btn3-633d052124b78:hover {
+            background-color:  !important;
+        }
+    </style>
+
+        </div>
+    </div>
+</div>    </div>
+<div class="vc_row-full-width vc_clearfix"></div>
+    <div class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+       </div>
+    </div>
+</div>    </div>
+
+    <div id="about" class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521cd270"></div>
+
+
+        </div>
+    </div>
+</div>    </div>
+
+    <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1533529000100 vc_row-has-fill" style=&quot;background-position: right center !important; &quot;>
+                        
+<div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521cd76d"></div>
+
+
+        <div class="stm_ico_video style_3">
+			<img width="554" height="564" src="wp-content/uploads/sites/14/2018/08/video-bg_03.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://crypterio.stylemixthemes.com/white/wp-content/uploads/sites/14/2018/08/video-bg_03.png 554w, https://crypterio.stylemixthemes.com/white/wp-content/uploads/sites/14/2018/08/video-bg_03-295x300.png 295w, https://crypterio.stylemixthemes.com/white/wp-content/uploads/sites/14/2018/08/video-bg_03-50x50.png 50w" sizes="(max-width: 554px) 100vw, 554px" />            <a data-fancybox="" href="https://www.youtube.com/embed/k3c1SjlifDY?autoplay=1" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer"></a>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521ce4dd"></div>
+
+
+<div class="vc_custom_heading text_align_left stripe_bottom" ><h2 style="font-size: 42px;line-height: 48px;text-align: left" >What is Coo Network?</h2></div><div class="stm-spacing" id="stm-spacing-633d0521ce785"></div>
+
+What is Coo Network
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h6>Coo Network is a decentralized staking infrastructure that enables the distributed operation of an Ethereum validator. This is achieved by splitting a validator key between four or more non trusting node instances (‘multi-operator node’). The nodes are collectively tasked with executing the validator’s duties under a consensus mechanism. In simple terms, the protocol transforms a validator key into a multisig construct governed by a consensus layer.</h6>
+<p>The unique protocol improves robustness, liveliness and fault tolerance of nodes across the Ethereum ecosystem. Distributing validator keys between node instances suggests a major leap forward comparing to existing staking schemes who fall short when it comes to:</p>
+
+		</div>
+	</div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<ul>
+<li>Validator keys can be stored offline</li>
+<li>‘Active to active’ redundancy</li>
+<li>Node instances customizability</li>
+<li>Threshold signature scheme</li>
+</ul>
+
+		</div>
+	</div>
+<div class="stm-spacing" id="stm-spacing-633d0521ceda7"></div>
+
+
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+
+		</div>
+	</div>
+</div></div></div></div>        </div>
+    </div>
+</div>    </div>
+<div class="vc_row-full-width vc_clearfix"></div>
+    <div class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521cf3f6"></div>
+
+
+        </div>
+    </div>
+</div>    </div>
+
+    <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1533188651401 vc_row-has-fill" style=&quot;&quot;>
+                        
+<div class="wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			
+<div class="vc_image_carousel_wr grayscale">
+	<div class="vc_image_carousel style_1" id="owl-633d0521cf92c">
+								<div class="item">
+									<a href="#">
+						<img width="136" height="34" src="wp-content/uploads/sites/14/2018/08/brands_07.png" class="attachment-full" alt="" loading="lazy" title="brands_07" />					</a>
+							</div>
+									<div class="item">
+									<a href="#">
+						<img width="147" height="15" src="wp-content/uploads/sites/14/2018/08/brands_19.png" class="attachment-full" alt="" loading="lazy" title="brands_19" />					</a>
+							</div>
+									<div class="item">
+									<a href="#">
+						<img width="151" height="19" src="wp-content/uploads/sites/14/2018/08/brands_16.png" class="attachment-full" alt="" loading="lazy" title="brands_16" />					</a>
+							</div>
+									<div class="item">
+									<a href="#">
+						<img width="162" height="21" src="wp-content/uploads/sites/14/2018/08/brands_13.png" class="attachment-full" alt="" loading="lazy" title="brands_13" />					</a>
+							</div>
+									<div class="item">
+									<a href="#">
+						<img width="135" height="34" src="wp-content/uploads/sites/14/2018/08/brands_10.png" class="attachment-full" alt="" loading="lazy" title="brands_10" />					</a>
+							</div>
+				</div>
+	
+</div>
+        </div>
+    </div>
+</div>    </div>
+<div class="vc_row-full-width vc_clearfix"></div>
+    <div id="how_it_works" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521d1352"></div>
+
+
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_custom_heading text_align_left stripe_bottom" ><h2 style="font-size: 42px;line-height: 48px;text-align: left" >How it works</h2></div><div class="stm-spacing" id="stm-spacing-633d0521d1910"></div>
+
+
+
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h6>Distributed Validator Technology enables trustless staking through multi-operator validation. Validator keys are distributed between non-trusting nodes which operate under a consensus layer to perform duties on the Beacon Chain.</h6>
+<p>DVT promotes client diversity, decentralization, and fault tolerance while mitigating slashing and downtime risks.</p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="stm-spacing" id="stm-spacing-633d0521d1c5b"></div>
+
+
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center  wpb_animate_when_almost_visible wpb_fadeInRight fadeInRight">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="510" height="448" src="wp-content/uploads/hiw.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" title="chart_03" srcset="wp-content/uploads/hiw.png, wp-content/uploads/hiw.png" sizes="(max-width: 510px) 100vw, 510px" /></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="stm-spacing" id="stm-spacing-633d0521d28f5"></div>
+
+
+        </div>
+    </div>
+</div>    </div>
+<div class="vc_row-full-width vc_clearfix"></div>
+    <div id="cost-calculator" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+	</div>
+</div></div></div>        </div>
+    </div>
+</div>    </div>
+<div class="vc_row-full-width vc_clearfix"></div>
+    <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+ </div>
+<div class="vc_row-full-width vc_clearfix"></div>
+    <div id="token" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1612443637391 vc_row-has-fill" style=&quot;background-position: top right !important; &quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521d728a"></div>
+
+
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_custom_heading text_align_left stripe_bottom" ><h2 style="font-size: 42px;line-height: 48px;text-align: left" >Join the Network</h2></div><div class="stm-spacing" id="stm-spacing-633d0521d7807"></div>
+
+
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-4 vc_col-md-4 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+
+			            <a href="#" target="_self" class="icon_box vc_custom_1533292575788 wpb_animate_when_almost_visible fadeInUp style_1 text-left icon_left clearfix" style="animation-delay:0.1s">
+				            <div class="icon font-color_default font-color_none" style="width:84px"><i
+                        style="font-size:48px;  "
+                        class="stm-ico_campaign"></i></div>
+		        <div class="icon_text" data-readmore="">
+			                <h5 style="font-size:18px;line-height:24px" class="font-color_base no_stripe">Testnet Campaigns</h5>
+						<p>Get incentives and benefits of being a beta user.</p>
+        </div>
+		            </a>
+			
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-4 vc_col-md-4 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+
+			            <a href="#" target="_self" class="icon_box vc_custom_1533292598508 wpb_animate_when_almost_visible fadeInUp style_1 text-left icon_left clearfix" style="animation-delay:0.2s">
+				            <div class="icon font-color_default font-color_none" style="width:84px"><i
+                        style="font-size:48px;  "
+                        class="stm-marketplace"></i></div>
+		        <div class="icon_text" data-readmore="">
+			                <h5 style="font-size:18px;line-height:24px" class="font-color_base no_stripe">Governance</h5>
+						<p>the next billion users to the ETH staking economy. </p>
+        </div>
+		            </a>
+			
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-4 vc_col-md-4 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+
+			            <a href="#" target="_self" class="icon_box vc_custom_1533292613137 wpb_animate_when_almost_visible fadeInUp style_1 text-left icon_left clearfix" style="animation-delay:0.3s">
+				            <div class="icon font-color_default font-color_none" style="width:84px"><i
+                        style="font-size:48px;  "
+                        class="stm-world_coin"></i></div>
+		        <div class="icon_text" data-readmore="">
+			                <h5 style="font-size:18px;line-height:24px" class="font-color_base no_stripe">Run a COO Node</h5>
+						<p>Distribute your validator operation between multiple staking providers, clients, servers, and geolocations. </p>
+        </div>
+		            </a>
+			
+</div></div></div></div><div id="roadmap" class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="stm-spacing" id="stm-spacing-633d0521d9b17"></div>
+
+
+<div class="vc_custom_heading text_align_left stripe_bottom" ><h2 style="font-size: 42px;line-height: 48px;text-align: left" >Project Planning</h2></div><div class="stm-spacing" id="stm-spacing-633d0521d9e53"></div>
+
+
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper">    <div class="stm_timeline-wrap wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp" style="animation-duration: 1s !important;">
+                    <div class="timeline-item">
+                <div class="timeline-date past">
+                    <span class="timeline_month">Q1-Q4</span>
+                    <span class="timeline_year">2020</span>
+                </div>
+                <div class="timeline_content">Conception, Initialization & Planning</div>
+            </div>
+                    <div class="timeline-item">
+                <div class="timeline-date past">
+                    <span class="timeline_month">December</span>
+                    <span class="timeline_year">2022</span>
+                </div>
+                <div class="timeline_content">Testnet Registration</div>
+            </div>
+                    <div class="timeline-item">
+                <div class="timeline-date past">
+                    <span class="timeline_month">January</span>
+                    <span class="timeline_year">2023</span>
+                </div>
+                <div class="timeline_content">Incentivized Testnet Launch (V1) </div>
+            </div>
+                    <div class="timeline-item">
+                <div class="timeline-date past">
+                    <span class="timeline_month">February</span>
+                    <span class="timeline_year">2023</span>
+                </div>
+                <div class="timeline_content">Incentivized Testnet Launch (V2) </div>
+            </div>
+                    <div class="timeline-item">
+                <div class="timeline-date past">
+                    <span class="timeline_month">TBD</span>
+                    <span class="timeline_year">2023</span>
+                </div>
+                <div class="timeline_content">Mainnet launch & Incentive Claim</div>
+            </div>
+            </div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div>        </div>
+    </div>
+</div>    </div>
+<div class="vc_row-full-width vc_clearfix"></div></section><div class="vc_row-full-width vc_clearfix"></div>
+    <div id="team" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1533528873642 vc_row-has-fill" style=&quot;background-position: top left !important; &quot;>
+                        
+<div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			
+
+
+    </div>
+</li>				                			</ul>
+
+		</div>
+
+	
+
+<div class="stm-spacing" id="stm-spacing-633d0521e043e"></div>
+
+
+
+	
+
+        </div>
+    </div>
+</div>    </div>
+<div class="vc_row-full-width vc_clearfix"></div>
+    <div id="faq" class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521e3af7"></div>
+
+
+<div id="tokenomics" class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_custom_heading text_align_left stripe_bottom" ><h2 style="font-size: 42px;line-height: 48px;text-align: left" >Distribution of Tokens</h2></div><div class="stm-spacing" id="stm-spacing-633d0521e408a"></div>
+
+
+
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h6>Our clients — both corporate and private ones — will access all the services they need from a single platform.</h6>
+<p>Blockchain technology gives us the chance to make your finances grow faster and give better returns.</p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-7"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="stm-spacing" id="stm-spacing-633d0521e442f"></div>
+
+
+
+<div class="vc_chart vc_round-chart wpb_content_element" data-vc-legend="1" data-vc-tooltips="1" data-vc-animation="easeOutBounce" data-vc-stroke-color="#ffffff" data-vc-type="doughnut" data-vc-values="{&quot;datasets&quot;:[{&quot;data&quot;:[75,13,9,2,1],&quot;backgroundColor&quot;:[&quot;#28efdb&quot;,&quot;#0095ff&quot;,&quot;#273dff&quot;,&quot;#b44fff&quot;,&quot;#ffd400&quot;]}]}">
+	
+	<div class="wpb_wrapper">
+		<div class="vc_chart-with-legend"><canvas class="vc_round-chart-canvas" width="1" height="1"></canvas></div><ul class="vc_chart-legend"><li><span style="background-color:#28efdb"></span>Distributed to Community<p></p></li><li><span style="background-color:#0095ff"></span>13% Reserved Funding<p></p></li><li><span style="background-color:#273dff"></span>9% Founders and Team<p></p></li><li><span style="background-color:#b44fff"></span>2% Advisors<p></p></li><li><span style="background-color:#ffd400"></span>1% Bounty campaign<p></p></li></ul>
+	</div>
+</div>
+</div></div></div></div><div class="stm-spacing" id="stm-spacing-633d0521e52d2"></div>
+
+
+        </div>
+    </div>
+</div>    </div>
+
+    <div class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1533118576058"><div class="wpb_wrapper"><div class="stm_mailchimp_form">
+    <div class="mailchimp_text">
+                    <i class="stm-id_envelope"></i>
+                        <h3>Newsletter Signup</h3>
+                            <div class="form_subtitle">
+                Sign up for another coming project updates.            </div>
+            </div>
+    <div class="mailchimp_content">
+        <!-- Mailchimp for WordPress v4.8.7 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-4078" method="post" data-id="4078" data-name="Suscribe" ><div class="mc4wp-form-fields"><div class="stm_newsletter_form">
+<input class="form-control" type="email" name="EMAIL" placeholder="Enter Your E-mail" required="">
+<input id="stm_newsletter_submit" type="submit" value="">
+<label for="stm_newsletter_submit"><i class="stm-email"></i></label>
+</div></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1664943393" /><input type="hidden" name="_mc4wp_form_id" value="4078" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin -->    </div>
+</div>
+</div></div></div></div>        </div>
+    </div>
+</div>    </div>
+
+    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1533119366698 vc_row-has-fill vc_row-no-padding" style=&quot;&quot;>
+                        
+<div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner ">
+        <div class="wpb_wrapper">
+            			<div class="stm-spacing" id="stm-spacing-633d0521e6c99"></div>
+
+
+        </div>
+    </div>
+</div>    </div>
+<div class="vc_row-full-width vc_clearfix"></div>
+					</div>
+	
+</article>
+	</div>
+
+    </div> <!--.container-->
+    </div> <!-- #main-->
+    </div> <!--.content_wrapper-->
+		        <footer id="footer" class="footer style_1">
+
+			                <div class="widgets_row">
+                    <div class="container">
+                        <div class="footer_widgets">
+                            <div class="row">
+								                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+																																	                                                    <div class="footer_logo">
+                                                        <a href="index.html" data-wpel-link="internal">
+                                                            <img src="wp-content/uploads/coo.png"
+                                                                 alt="Coo Leverage Logo"/>
+                                                        </a>
+                                                    </div>
+																																		                                                <div class="footer_text">
+                                                    <p>Coo Leverage is designed for building high-performance, secure, and decentralized ETH staking applications. </p>
+                                                </div>
+																															<div class="stm-copyright">Copyright &copy; 2022 -  Coo Leverage. All rights reserved</div><section id="text-4" class="widget widget_text">			<div class="textwidget">
+</div>
+		</section>										                                    </div>
+								                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+																				
+		<section id="recent-posts-4" class="widget widget_recent_entries">
+		<h4 class="widget_title no_stripe">Our Social Media</h4>
+		<ul>
+				<li>
+                    <a href="#" class="staff_twitter" target="_blank">
+                    <i class="fab fa-twitter"></i> Twitter : @cooleverage</a>
+				</li>
+				<li>
+                    <a href="#" class="staff_twitter" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram : @cooleverage</a>
+				</li>
+				<li>
+                    <a href="#" class="staff_twitter" target="_blank">
+                    <i class="fab fa-reddit"></i> Reddit : @cooleverage</a>
+				</li>
+					</ul>
+
+		</section>										                                    </div>
+								                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">  									                                    </div>
+								                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+																				<section id="nav_menu-3" class="widget widget_nav_menu"><h4 class="widget_title no_stripe">Navigation</h4><div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4314"><a href="#overview">Overview</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4065"><a href="#about">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4066"><a href="#how_it_works">How it Works</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4070"><a href="#tokenomics">Tokenomics</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4068"><a href="#roadmap">Roadmap</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4067"><a href="https://register.cooleverage.tech" target="_blank">Register Testnet</a></li>
+</ul></div>
+        <div class="copyright_row_wr">
+            <div class="copyright">
+                    Copyright &copy; 2022 Coo Leverage. All rights reserved                                
+            </div>
+         </div>
+</div>
+</section>										                                    </div>
+								                            </div>
+                        </div>
+                    </div>
+                </div>
+			
+			        </footer>
+	    </div> <!-- #wrapper-->
+    <style>
+.demos-list .demo .img .heading-font {
+    display: block;
+    width: 150px;
+    position: absolute;
+    text-align: center;
+    left: -9.5%;
+    top: 22px;
+    padding: 10px 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    font-weight: 700;
+    text-transform: uppercase;
+	z-index: 2;
+	line-height: 13px;
+	font-size: 14px;
+}
+.demos-list .demo .img .popular.heading-font {
+    background: #0048a8;
+    color: #ffffff;
+}
+.demos-list .demo .img .new.heading-font {
+    background: #00cb45;
+    color: #ffffff;
+}
+.demos-list .demo .img .soon.heading-font {
+    background: #f3b700;
+    color: #1d1e20;
+}
+</style>
+
+</div>
+
+
+
+		
+		<script type="text/html" id="wpb-modifications"></script><link rel='stylesheet' id='vc_animate-css-css'  href='wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min8e94.css?ver=6.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css'  href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=5.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_font_awesome_5_shims-css'  href='wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/v4-shims.min8e94.css?ver=6.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_font_awesome_5-css'  href='wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.min8e94.css?ver=6.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='wp-content/themes/crypterio/assets/css/vendors/jquery.fancybox62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl.carousel-css'  href='wp-content/themes/crypterio/assets/css/owl.carousel62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='stm-crypto-calculator-css'  href='wp-content/themes/crypterio/assets/css/shared/vc/crypto-calculator62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cc-builder-awesome-css-css'  href='wp-content/plugins/cost-calculator-builder/frontend/dist/css/all.min9254.css?ver=2.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='calc-builder-app-css-css'  href='wp-content/plugins/cost-calculator-builder/frontend/dist/bundle9254.css?ver=2.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='ccb-material-css-css'  href='wp-content/plugins/cost-calculator-builder/frontend/dist/css/material9254.css?ver=2.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='ccb-material-style-css-css'  href='wp-content/plugins/cost-calculator-builder/frontend/dist/css/material-styles9254.css?ver=2.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='stm_timeline_white-css'  href='wp-content/themes/crypterio/assets/css/shared/vc/stm_timeline_white62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mailchimp_form-css'  href='wp-content/themes/crypterio/assets/css/shared/vc/mailchimp_form62ea.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sli-common-vendors-css'  href='wp-content/plugins/spotlight-social-photo-feeds/ui/dist/styles/common-vendorsbd19.css?ver=0.10.3' type='text/css' media='all' />
+<link rel='stylesheet' id='sli-common-css'  href='wp-content/plugins/spotlight-social-photo-feeds/ui/dist/styles/commonbd19.css?ver=0.10.3' type='text/css' media='all' />
+<link rel='stylesheet' id='sli-feed-css'  href='wp-content/plugins/spotlight-social-photo-feeds/ui/dist/styles/feedbd19.css?ver=0.10.3' type='text/css' media='all' />
+<link rel='stylesheet' id='sli-front-css'  href='wp-content/plugins/spotlight-social-photo-feeds/ui/dist/styles/front-appbd19.css?ver=0.10.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='wp-content/plugins/revslider/public/assets/css/rs6adc6.css?ver=6.5.5' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+<script type='text/javascript' src='../../cdnjs.cloudflare.com/ajax/libs/money.js/0.2.0/money.mine480.js?ver=0.2.0' id='money-js-js'></script>
+
+<script type='text/javascript' src='wp-content/plugins/virtual_coin_widgets/assets/js/vcw.min605a.js?ver=2.2.2' id='vcw-script-js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script defer src="wp-content/cache/autoptimize/14/js/autoptimize_1a26b9c7b6df6ebd5ae9e6a0084a6425.js"></script><script>(function(){var js = "window['__CF$cv$params']={r:'77416922de88ab4a',m:'WudsEt9SZWIK9OWrxuD9u2BrFc4kQ.aCd1ThWKDjdTA-1670124073-0-ASxDRXwY/awUgbvuWSPtZlv+HJJgpuxl2ADZ3eC7Vm1wKTtGXIufVrEBXWP5VB3pXI9Wp1pwXeaBwUUM4Av5AXmt/rUJHzhqu3sJGOtVkS1+8OETClT8H3zEuAnEwTPAKQ==',s:[0x65ce8cc1a4,0x6da933f8ab],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible5615.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
